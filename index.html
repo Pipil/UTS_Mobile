@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets 
+   <link rel="stylesheet" href="./layout.css">-->
+  <link rel="stylesheet" href="./jquery.mobile-1.4.5.min.css">
+ 	<link rel="stylesheet" href="themes/header.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <!-- Include the jQuery library -->
+  <script src="./jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="./jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Halaman Satu -->
+<div data-role="page" id="hal1">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>WELCOME TO MY PROFILE WEB MOBILE</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menus</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+    <p>This is my Program Mobile Project. In here, let me show you about my Profile Stories.</p>
+	<a href="#hal2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+
+<!-- Halaman Dua -->
+
+<div data-role="page" id="hal2">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - Biodata</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menus</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<p>Fullname     : Lutfia Ningtias</p>
+<p>Nickname  	: Pipil</p>
+    <div data-role="collapsible" >
+	  <h1>Click for view the detail</h1>
+      <p>Address   		: Japan Asri C/23 Palem Kartika II street
+      <p>RT/RW     		: 01/13</p>
+	  <p>Village   		: Japan</p>
+	  <p>District  		: Sooko</p>
+	  <p>City  	 	    : Mojokerto</p>
+	  <p>Province  		: East Java</p>
+      <p>Marital Status : Not single</p>
+      <p>Nationality	: Indonesian</p>
+      <p>Religion		: Moslem</p>
+	</div>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+<!-- Halaman Tiga -->
+<div data-role="page" id="hal3">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Date of Birth</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<center><p>View Date of Birth. <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p></center>
+<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Birth of Place :</b> Sidoarjo</p>
+      <p><b>Birth of Date  :</b> August 1st 1995</p>
+</div>
+<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+</div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+<!-- Halaman Empat -->
+<div data-role="page" id="hal4">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Personal Contact</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+   <table data-role="table" class="ui-responsive" id="myTable">
+  <thead>
+    <tr>
+      <th>Google Mail</th>
+      <th>Yahoo Mail</th>
+      <th>Phone Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lutfiaaa.ln@gmail.com</td>
+      <td>lutfianingtias@yahoo.com</td>
+      <td>085648911482</td>
+    </tr>
+  </tbody>
+</table>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+<!-- Halaman Lima -->
+<div data-role="page" id="hal5">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Social Media Account</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+ <div data-role="main" class="ui-content">
+    <p>Pin BB : 7FAE9944</p>
+	<div data-role="collapsible" >
+	  <h1>Click for view the detail</h1>
+      <p>Facebook  : Lutfia Ningtias</p>
+   	  <p>Twitter   : @Piiilllll</p>
+      <p>Instagram : @pipil99
+      <p>Line      : pipil99
+	</div>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+<!-- Halaman Enam -->
+<div data-role="page" id="hal6">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Education</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+    <p><b><u>My Education History</p></b></u>
+	 <div class="ui-grid-b ui-responsive">
+     <div class="ui-block-a">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Kindergarten</a>
+        <p>Place : TK Busthanul Alfath Sidoarjo</p><p>Graduation Year : 2001 </p>
+      </div>
+      <div class="ui-block-a">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Elementary School</a>
+        <p>Place : SDN Japan 04 Mojokerto</p><p>Graduation Year : 2007 </p>
+      </div>
+      <div class="ui-block-b">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Junior High School</a>
+        <p>Place : SMPN 1 Sooko Mojokerto</p><p>Graduation Year : 2010 </p>
+      </div>
+      <div class="ui-block-c">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Senior High School</a>
+        <p>Place : SMAN 1 Sooko Mojokerto</p><p>Graduation Year : 2013 </p>
+	  </div>
+      <div class="ui-block-c">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">College</a>
+        <p>Place : State University of Surabaya</p><p>Faculty : Technical Faculty</p><p>Department : Informatic Engineering </p><p>Study Program : Information Technology of Education</p><p>Generation : 2013</p>
+      </div>
+    </div>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>   
+  
+<!-- Halaman Tujuh -->
+<div data-role="page" id="hal7">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Certificate Collection as Participant</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+    <p>My Certificate Collection at State University of Surabaya</p>
+	 <div class="ui-grid-b ui-responsive">
+      <div class="ui-block-a">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Seminar ICT - Next Era of Information Technology</a>
+        <p>Date and Time : Surabaya, 18 November 2014 </p>
+      </div>
+      <div class="ui-block-b">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Journalism Training</a>
+        <p>Date and Time : Surabaya, 14 Juni 2014 </p>
+      </div>
+      </div>
+      <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	  <a href="#hal8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>
+  
+<!-- Halaman Delapan -->
+<div data-role="page" id="hal8">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Profile - My Project Experiences</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+    <p>My Project Experiences</p>
+	 <div class="ui-grid-b ui-responsive">
+      <div class="ui-block-a">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Birthdays Greeting - Video Documentation Maker</a>
+        <p>Date and Time : Mojokerto, June 24th 2012 </p>
+      </div>
+      <div class="ui-block-b">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Audio Visual Techniques - Video Project Maker</a>
+        <p>Date and Time : Surabaya, December 19th 2013 </p>
+      </div>
+      <div class="ui-block-b">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">Pemrograman Web Book - Writer</a>
+        <p>Date and Time : Surabaya, June 9th 2015 </p>
+      </div>
+      </div>
+      <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+  </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>
+
+<!-- Halaman Sembilan -->
+<div data-role="page" id="hal9">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Notes - My Favourite Quotes</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<li><p>You will never change your life, until you change something you do daily. The SECRET of your SUCCESS is found in your DAILY ROUTINE !!</li></p>
+<li><p>A person who never made a mistake, never tried anything new. {ALBERT EINSTEIN}</li></p>
+<li><p>When your faith is stronger than your fears, you can make your dreams happen.</li></p>
+<li><p>Never underestimate The Power of PRAYER. One small PRAYER can CHANGE COMPLETELY of your life.</li></p>
+<li><p>One small POSITIVE THOUGHT in the morning, can change your whole day.</li></p>
+<li><p>Success is not about gambling, it's all about PREPARATION</li></p>
+<li><p>Just Be Yourself !!</p></li>
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal10" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a> 
+    </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>  
+  
+<!-- Halaman Sepuluh -->
+<div data-role="page" id="hal10">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Notes - MOTTO</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">  
+<h2>"MAN JADDA WAJADA"</h2>  
+<p>(Siapa yang bersungguh-sungguh akan berhasil)</p>
+<h2><p>"MAN SHABARA ZHAFIRA"</p></h2>
+<p>(Siapa yang bersabar akan beruntung)</p>
+<h2><p>"MAN SARA DARBI ALA WASHALA"</p></h2>
+<p>(Siapa yang berjalan di jalur-NYA akan sampai)</p>
+<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal11" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a> 
+    </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>    
+
+<!-- Halaman Sebelas -->
+<div data-role="page" id="hal11">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Notes - My Future Hopes</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<h5> My dream is somedays after when I was graduated, then I immediately got a job that fits my skills mastered so i can work with a vengeance. Also i can take my parent to go to Mecca. After that, i was able to be writer which is can inspiring so many young people in order to always keep fighting for his dreams. Lastly, i hope for everyone who loving me can be happy with me. Finally, i wish for all my hopes come true aamiin.</h5>
+<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+</div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>     
+
+<!-- Halaman Dua Belas -->
+<div data-role="page" id="hal12">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Gallery - My Profile Photos</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+
+<center><a href="#popupPip" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="./images/pip.jpg" style="width:30%"></a></center>
+<div data-role="popup" id="popupPip" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./images/pip.jpg" style="max-height:512px;">
+</div>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+	<a href="#hal13" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a> 
+</div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>
+
+<!-- Halaman Tiga Belas -->
+<div data-role="page" id="hal13">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Gallery - My Family Photos</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<div class="ui-grid-b ui-responsive">
+<div class="ui-block-a">
+        <center><span><p><a href="#hal2"><img src="images/family.JPG" width="90%" height="300px" /></a></p></span></center>
+        <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+		<a href="#hal14" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a> 
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>
+
+<!-- Halaman Empat Belas -->
+<div data-role="page" id="hal14">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div>
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>My Gallery - My College Photos</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+<div class="ui-grid-b ui-responsive">
+	<div class="ui-block-a">
+        <center><span><p><a href="#hal2"><img src="images/college.JPG" width="90%" height="300px" /></a></p></span></center>
+        <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+		<a href="#hal15" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini ui-btn-inline">Next</a> 
+	</div>
+</div>
+</div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div>
+
+  
+<!-- Halaman Lima Belas -->
+<div data-role="page" id="hal15">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>Motivation Video</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+<div data-role="main" class="ui-content">
+     <center>
+     <video width="100%" height="300" controls>
+	<source src="video.mp4" type="video/mp4">
+	</video> 
+	</center>
+	<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-mini ui-btn-inline" data-rel="back">Before</a>
+ </div>
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+<!-- Halaman Enam Belas -->
+<div data-role="page" id="hal16">
+<!-- Navigasi -->
+<div data-role="panel" id="mypanel"> 
+    <h2>Panel Menus</h2>
+    <p><a href="#hal1" data-transition="flow">Home</a></p>
+	<p><a href="#hal2" data-transition="flow">My Profile</a></p>
+	<p><a href="#hal9" data-transition="flow">My Notes</a></p>
+	<p><a href="#hal12" data-transition="flow">My Gallery</a></p>
+	<p><a href="#hal15" data-transition="flow">Motivation Video</a></p>
+    <p><a href="./biodata/oke.php" data-transition="flow">Biodata</a></p>
+  </div> 
+<!-- Header -->
+<div data-role="header">
+	<a href="#hal1" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide">Home</a>
+    <h1>Biodata Input Form of My Friends</h1>
+	<a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">View Menu</a>
+  </div>
+<!-- Content -->
+
+<!-- Footer -->
+<div data-role="footer" data-position="fixed">
+    <h1>Copyright L.N - 2015. All Right Reserved.</h1>
+  </div>
+</div> 
+
+</body>
+</html>
